@@ -4,6 +4,10 @@
 brew update
 brew upgrade git
 brew install npm
+brew install python
+# The following command links formulae with .app style packages to /Applications
+# which adds IDLE to the app list and makes it startable from the Mac OS X GUI
+brew linkapps python 
 ```
 
 ## Install editor and packages
