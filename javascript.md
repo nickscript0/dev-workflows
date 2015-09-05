@@ -1,10 +1,9 @@
 # Javascript Dev Workflow
-## Install Editor and packages
-1. Install Atom.io
-2. Install packages: linter-eslint
-
-## Install npm dependencies for Atom packages
+**Assumes atom_editor.md is completed.**
+## Start a new project
 ```
-
 npm install --save-dev eslint babel-eslint
+jspm init
 ```
+
+## TODO: Flow / Nuclide setup
