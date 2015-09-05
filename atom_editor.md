@@ -21,9 +21,13 @@ apm install linter-pylint
 
 ## Install npm dependencies for Atom packages
 ```
-pip install --upgrade pylint
-pip install --upgrade autopep8
+# Javascript related
+npm install jspm -g # for js package management and es6 dev (babel)
+npm install --save-dev eslint babel-eslint
 
 
-
+# Other languages
+pip install --upgrade pylint # linter-pylint
+pip install --upgrade autopep8 # beautify (python)
+npm install --global elm
 ```
