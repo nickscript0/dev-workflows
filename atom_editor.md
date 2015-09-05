@@ -23,6 +23,7 @@ apm install linter-pylint
 ```
 # Javascript related
 npm install jspm -g # for js package management and es6 dev (babel)
+## Must run the following per project: (as the atom eslint package doesn't work with global install ??)
 npm install --save-dev eslint babel-eslint
 
 
