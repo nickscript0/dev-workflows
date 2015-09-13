@@ -1,7 +1,13 @@
+/* Reference:
+ *  http://eslint.org/docs/user-guide/configuring.html
+ *  http://eslint.org/docs/rules/
+ */
 {
     "parser": "babel-eslint",
+    "env": {
+         "browser": true
+     },
     "rules": {
-        "global-strict": 0,
         "camelcase": 0,
         "quotes": 0,
         "no-console": 0,
