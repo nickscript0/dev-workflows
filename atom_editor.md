@@ -16,11 +16,12 @@ brew linkapps python
 ```bash
 apm install atom-beautify
 apm install language-docker
-apm install language-elm
+apm install language-elm # Autocomplete requires config step: https://atom.io/packages/language-elm
 apm install linter
 apm install linter-eslint
 apm install linter-js-yaml
 apm install linter-pylint
+apm install linter-elm-make # Requires config step: https://atom.io/packages/linter-elm-make
 ```
 
 ## Install npm dependencies for Atom packages
@@ -31,8 +32,12 @@ npm install jspm -g # for js package management and es6 dev (babel)
 npm install --save-dev eslint babel-eslint
 
 
-# Other languages
+# Python related
 pip install --upgrade pylint # linter-pylint
 pip install --upgrade autopep8 # beautify (python)
+
+# Elm related
 npm install --global elm
+npm install -g elm-oracle # For autocomplete https://atom.io/packages/language-elm
+
 ```
