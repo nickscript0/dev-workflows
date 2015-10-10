@@ -27,11 +27,12 @@ jspm install github:lhorie/mithril.js
 import m from "lhorie/mithril.js";
 ```
 
-## Flow (using Atom Nuclide)
+## Flow (using linter-flow)
+Nuclide is too heavyweight and takes forever to startup Atom, instead use https://atom.io/packages/linter-flow
 ### First time setup
 ```bash
 brew install flow
-apm install nuclide-installer
+apm install linter-flow
 
 # Start the server
 flow
