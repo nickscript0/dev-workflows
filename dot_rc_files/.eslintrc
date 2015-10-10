@@ -1,18 +1,24 @@
-/* Reference:
+/* Version: eslint@1.6.0
+ * Reference:
  *  http://eslint.org/docs/user-guide/configuring.html
  *  http://eslint.org/docs/rules/
+ * Tips:
+ *  - Single line disable: //eslint-disable-line no-use-before-define
+ *  - Global var disable: /[star] global someVar [star]/
  */
 {
-    "parser": "babel-eslint",
-    "env": {
-         "browser": true
-     },
-    "rules": {
-        "camelcase": 0,
-        "quotes": 0,
-        "no-console": 0,
-        "no-use-before-define": 0,
-        "no-underscore-dangle": 0,
-        "dot-notation": 0
-    }
+  "parser": "babel-eslint",
+  "rules": {
+    "camelcase": 0,
+    "quotes": 0,
+    "no-console": 0,
+    "no-use-before-define": 0,
+    "no-underscore-dangle": 0,
+    "dot-notation": 0
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": "eslint:recommended"
 }
