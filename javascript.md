@@ -4,6 +4,7 @@
 ### Install Javascript Package Manager and ES6 support
 ```
 npm install --save-dev eslint babel-eslint
+
 # The following step is required specifically for "parser": "babel-eslint"
 curl https://raw.githubusercontent.com/nickscript0/dev-workflows/master/dot_rc_files/.eslintrc > .eslintrc
 jspm init
