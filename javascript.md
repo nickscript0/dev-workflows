@@ -27,4 +27,19 @@ jspm install github:lhorie/mithril.js
 import m from "lhorie/mithril.js";
 ```
 
-## TODO: Flow / Nuclide setup
+## Flow (using Atom Nuclide)
+### First time setup
+```bash
+brew install flow
+apm install nuclide-installer
+
+# Start the server
+flow
+```
+
+### Per project setup
+```bash
+flow init
+# Add /* @flow */ to the top of files to type check
+```
+
