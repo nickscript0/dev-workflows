@@ -44,3 +44,10 @@ flow init
 # Add /* @flow */ to the top of files to type check
 ```
 
+### Flow limitations I ran into (Updated Oct. 16, 2015)
+- Does not support external JSPM ES6 imports, e.g., ```import m from "lhorie/mithril.js";``` gives "Required module not found"
+- Does not support local JSPM ES6 imports, e.g., ```import {m} from "models/mymodel"``` must be written as ```import {m} from "./models/mymodel"```
+- Only "unsafely" supports getters/setters https://github.com/facebook/flow/issues/444
+- Does not support a way of binding ES6 class methods. Because ES6 class methods aren't lexically bound to this, I regularly have to do this using 1 of 2 patterns. The former causes a flowtype error/warning, the latter is not supported (see https://github.com/facebook/flow/pull/861):
+  1. In the constructor ```this.someMethod = this.someMethod.bind(this);```
+  1. Or more cleanly auto-bind class properties (requires es7.classProperties enabled in Babel config) ```someMethod = () => {...}```
