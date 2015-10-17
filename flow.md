@@ -18,7 +18,8 @@ flow init
 ## Flow limitations I ran into (Updated Oct. 16, 2015)
 ### JSPM and ES6 imports
 - Does not support external JSPM ES6 imports, e.g., ```import m from "lhorie/mithril.js";``` gives "Required module not found". 
- **Workaround**: add ```module.name_mapper= 'lhorie/mithril.js' -> 'mithril'``` to .flowconfig [options] and run ```npm install --save-dev mithril``` (because flow looks in node_modules/package_name)
+  
+  **Workaround**: add ```module.name_mapper= 'lhorie/mithril.js' -> 'mithril'``` to .flowconfig [options] and run ```npm install --save-dev mithril``` (because flow looks in node_modules/package_name)
 - Only supports relative local ES6 imports, e.g., ```import {m} from "models/mymodel"``` must be written as ```import {m} from "./models/mymodel"```
 
 ### Getters and Setters
