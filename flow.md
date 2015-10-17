@@ -1,6 +1,7 @@
 # [Flow](http://flowtype.org/)
-Nuclide is too heavyweight and takes forever to startup Atom, instead use https://atom.io/packages/linter-flow
-## First time setup
+*Note on Atom editor integration: Nuclide is too heavyweight and takes forever to startup Atom, instead use https://atom.io/packages/linter-flow*
+## Setup
+**First time setup**
 ```bash
 brew install flow
 apm install linter-flow
@@ -9,13 +10,13 @@ apm install linter-flow
 flow
 ```
 
-## Per project setup
+**Per project setup**
 ```bash
 flow init
 # Add /* @flow */ to the top of files to type check
 ```
 
-## Flow limitations I ran into (Updated Oct. 16, 2015)
+## Flow limitations and workarounds (Updated Oct. 16, 2015)
 ### JSPM and ES6 imports
 - Does not support external JSPM ES6 imports, e.g., ```import m from "lhorie/mithril.js";``` gives "Required module not found". 
   
