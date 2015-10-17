@@ -7,7 +7,7 @@ brew install flow
 apm install linter-flow
 
 # Start the server
-flow
+flow start
 ```
 
 **Per project setup**
