@@ -45,7 +45,8 @@ flow init
 ```
 
 ### Flow limitations I ran into (Updated Oct. 16, 2015)
-- Does not support external JSPM ES6 imports, e.g., ```import m from "lhorie/mithril.js";``` gives "Required module not found"
+- Does not support external JSPM ES6 imports, e.g., ```import m from "lhorie/mithril.js";``` gives "Required module not found". 
+  - A workaround is: add ```module.name_mapper= 'lhorie/mithril.js' -> 'mithril'``` to .flowconfig [options] and run ```npm install --save-dev mithril``` (because flow looks in node_modules/package_name)
 - Only supports relative local JSPM ES6 imports, e.g., ```import {m} from "models/mymodel"``` must be written as ```import {m} from "./models/mymodel"```
 - Only "unsafely" supports getters/setters https://github.com/facebook/flow/issues/444
 - Does not support a way of binding ES6 class methods. Because ES6 class methods aren't lexically bound to this, I regularly have to do this using 1 of 2 patterns. The former causes a flowtype error/warning, the latter is not supported (see https://github.com/facebook/flow/pull/861):
