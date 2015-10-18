@@ -50,6 +50,11 @@ Because ES6 class methods aren't lexically bound to this, you regularly have to 
     }
   }
   ```
-1. Or more cleanly auto-bind class properties (requires es7.classProperties enabled in Babel config) ```someMethod = () => {...}```
+1. Or more cleanly auto-bind class properties (requires es7.classProperties enabled in Babel config) 
 
+  ```javascript
+  class C {
+    myBoundMethod = () => { // Flow error: class property initializers are not yet supported
+  }
+  ```
   **Waiting for**: https://github.com/facebook/flow/pull/861 to be merged and released.
