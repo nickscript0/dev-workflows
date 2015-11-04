@@ -1,5 +1,5 @@
 # Javascript Dev Workflow
-**Assumes atom_editor.md is completed.**
+**Assumes [atom_editor.md](atom_editor.md) is completed.**
 ## Start a new project
 ### Install Javascript Package Manager and ES6 support
 ```
@@ -28,19 +28,4 @@ import m from "lhorie/mithril.js";
 ```
 
 ## Flow (using linter-flow)
-Nuclide is too heavyweight and takes forever to startup Atom, instead use https://atom.io/packages/linter-flow
-### First time setup
-```bash
-brew install flow
-apm install linter-flow
-
-# Start the server
-flow
-```
-
-### Per project setup
-```bash
-flow init
-# Add /* @flow */ to the top of files to type check
-```
-
+See [flow.md](flow.md)
