@@ -7,7 +7,8 @@ brew install npm
 brew install python
 # The following command links formulae with .app style packages to /Applications
 # which adds IDLE to the app list and makes it startable from the Mac OS X GUI
-brew linkapps python 
+brew linkapps python
+brew install go # Then setup env variables: https://gist.github.com/vsouza/77e6b20520d07652ed7d
 ```
 
 ## Install editor and packages
