@@ -22,6 +22,7 @@ apm install linter-eslint
 apm install linter-js-yaml
 apm install linter-pylint
 apm install linter-elm-make # Requires config step: https://atom.io/packages/linter-elm-make
+apm install go-plus
 ```
 
 ## Install npm dependencies for Atom packages
