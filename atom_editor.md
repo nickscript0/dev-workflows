@@ -9,6 +9,8 @@ brew install python
 # which adds IDLE to the app list and makes it startable from the Mac OS X GUI
 brew linkapps python
 brew install go # Then setup env variables: https://gist.github.com/vsouza/77e6b20520d07652ed7d
+
+brew install homebrew/devel-only/elm-format --devel # For Elm atom-beautify support
 ```
 
 ## Install editor and packages
