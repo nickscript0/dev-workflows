@@ -13,3 +13,6 @@ import B exposing (SearchResult(..))
 -- Without its tags
 import B exposing (SearchResult)
 ```
+
+### Known Issues
+- [Ports do not register immediate `send`](https://github.com/elm-lang/core/issues/595)
