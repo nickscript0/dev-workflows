@@ -30,3 +30,8 @@ In VSC save a file called tsconfig.json. Intellisense will then help you fill it
 The next step is to set up the task configuration. 
 To do this open the Command Palette with ⇧⌘P and type in Configure Task Runner,
 Select "Typescript - Watch Mode"
+
+## React Native
+```bash
+npm install --save @types/react @types/react-native
+```
