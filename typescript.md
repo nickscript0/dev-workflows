@@ -1,13 +1,4 @@
 # Typescript Project
-
-## Upgrade to latest
-### Check tslint is up to date (better to use a project version but here are steps to do it globally)
-```bash
-npm list -g --depth=0 | grep "tslint\|typescript"
-# Visual Studio Code uses a builtin Typescript compiler but tslint needs a commandline version
-npm update -g typescript tslint 
-```
-
 ## Init a new project
 ### Step 1
 ```bash
@@ -53,4 +44,12 @@ import * as moment from "moment";
 
 # Relative import
 import * as mymodule from "./lib/mymodule";
+```
+
+## Upgrading Typescript and tslint
+### Check tslint is up to date (better to use a project version but here are steps to do it globally)
+```bash
+npm list -g --depth=0 | grep "tslint\|typescript"
+# Visual Studio Code uses a builtin Typescript compiler but tslint needs a commandline version
+npm update -g typescript tslint 
 ```
