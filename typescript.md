@@ -31,7 +31,26 @@ The next step is to set up the task configuration.
 To do this open the Command Palette with ⇧⌘P and type in Configure Task Runner,
 Select "Typescript - Watch Mode"
 
-## React Native
+## Modules and Imports
+### Installing npm modules and corresponding Type Definitions
+Lookup Type Definitions here https://microsoft.github.io/TypeSearch/
+
 ```bash
+# Example for React Native
+npm install --save react react-native
 npm install --save @types/react @types/react-native
+```
+
+### Importing an npm module in a Typescript file
+- Module resolution uses similar rules to Node.js' require (https://www.typescriptlang.org/docs/handbook/module-resolution.html#node)
+
+- Import statement docs https://www.typescriptlang.org/docs/handbook/module-resolution.html#relative-vs-non-relative-module-imports.
+
+Import examples:
+```bash
+# Non-relative import (from an npm module)
+import * as moment from "moment";
+
+# Relative import
+import * as mymodule from "./lib/mymodule";
 ```
