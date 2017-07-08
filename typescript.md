@@ -22,6 +22,20 @@ The next step is to set up the task configuration.
 To do this open the Command Palette with ⇧⌘P and type in Configure Task Runner,
 Select "Typescript - Watch Mode"
 
+## Creating a Browser Web App with Typescript
+Due to this issue
+
+```
+"To use ES6 modules in the browser you currently need to include a module loader such as RequireJS or SystemJS or use a bundling tool such as Browserify._
+
+We're actively discussing implementing a simple bundling feature in the TypeScript compiler itself."
+-- https://github.com/Microsoft/TypeScript/issues/2743
+```
+Typescript can not yet bundle the Javascript output to run in the browser.
+
+See here for the best way to currently do it (Webpack):
+https://basarat.gitbooks.io/typescript/docs/quick/browser.html#
+
 ## Modules and Imports
 ### Installing npm modules and corresponding Type Definitions
 Lookup Type Definitions here https://microsoft.github.io/TypeSearch/
