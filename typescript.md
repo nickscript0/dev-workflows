@@ -67,3 +67,7 @@ npm list -g --depth=0 | grep "tslint\|typescript"
 # Visual Studio Code uses a builtin Typescript compiler but tslint needs a commandline version
 npm update -g typescript tslint 
 ```
+
+## Front-end frameworks
+### React
+https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
