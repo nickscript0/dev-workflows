@@ -26,7 +26,7 @@ Select "Typescript - Watch Mode"
 Due to this issue
 
 ```
-"To use ES6 modules in the browser you currently need to include a module loader such as RequireJS or SystemJS or use a bundling tool such as Browserify._
+"To use ES6 modules in the browser you currently need to include a module loader such as RequireJS or SystemJS or use a bundling tool such as Browserify.
 
 We're actively discussing implementing a simple bundling feature in the TypeScript compiler itself."
 -- https://github.com/Microsoft/TypeScript/issues/2743
