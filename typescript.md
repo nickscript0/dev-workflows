@@ -17,11 +17,10 @@ In VSC save a file called tsconfig.json. Intellisense will then help you fill it
 }
 ```
 
-### Step 3 - auto-compilation
-The next step is to set up the task configuration. 
-- Open the Command Palette with ⇧⌘P and type in Configure Default Build Task, this will generate a tasks.json.
-- Add `"watch": true` to the "compilerOptions" section of tsconfig.json
-
+### Step 3 - auto-compilation on save
+- Open the Command Palette with ⇧⌘P and type in "Tasks: Run Build Task"
+- Select "tsc: watch - tsconfig.json"
+- *Deprecated: adding "watch: true" to tsconfig.json is inefficient and apparently unecessary now with the previous 2 steps*
 
 ## Creating a Browser Web App with Typescript
 Due to this issue
