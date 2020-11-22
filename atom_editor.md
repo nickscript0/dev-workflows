@@ -7,7 +7,10 @@ brew install npm
 brew install python
 # The following command links formulae with .app style packages to /Applications
 # which adds IDLE to the app list and makes it startable from the Mac OS X GUI
-brew linkapps python 
+brew linkapps python
+brew install go # Then setup env variables: https://gist.github.com/vsouza/77e6b20520d07652ed7d
+
+brew install homebrew/devel-only/elm-format --devel # For Elm atom-beautify support
 ```
 
 ## Install editor and packages
@@ -22,6 +25,8 @@ apm install linter-eslint
 apm install linter-js-yaml
 apm install linter-pylint
 apm install linter-elm-make # Requires config step: https://atom.io/packages/linter-elm-make
+apm install go-plus
+apm install jumpy
 ```
 
 ## Install npm dependencies for Atom packages
@@ -29,7 +34,7 @@ apm install linter-elm-make # Requires config step: https://atom.io/packages/lin
 # Javascript related
 npm install jspm -g # for js package management and es6 dev (babel)
 ## Must run the following per project: (as the atom eslint package doesn't work with global install ??)
-npm install --save-dev eslint babel-eslint
+npm install --save-dev eslint babel-eslint eslint-plugin-flow-vars
 
 
 # Python related
